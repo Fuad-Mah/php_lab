@@ -1,0 +1,56 @@
+div{
+    display:grid;
+    grid-template-rows:1fr 10fr 1fr;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "nav header"
+    "nav main"
+    "nav footer";
+    
+}
+nav{
+    grid-area:nav;
+    background-color:black;
+    color: white;
+}
+header{
+    grid-area:header;
+     background-color: #ffeaea;
+     text-align:center;
+    
+}
+main{
+    grid-area: main;
+    
+}
+footer{
+    grid-area:footer;
+    background-color: #ffeaea;
+    text-align:center
+    
+}
+nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:10px;
+}
+nav a:hover{
+    background-color:lightblue;
+    color:violet;
+}
+#main input{
+    display:block;
+    padding: 10px;
+    margin:5px;
+    border-radius:10px;
+}
+#main form{
+    margin-top:25px;
+    margin-left:25px;
+}
+#main input[type='submit']{
+    background-color: black;
+    border-color:black;
+    color:white;
+    width: 15%;
+}
